@@ -6,12 +6,4 @@ $publishMenu.append("<li id=\"channel-list\"><ul class=\"listjs\"></ul></li>");
 $channels.appendTo("#channel-list ul.listjs").children("a").addClass("channel-name");
 var options = { valueNames: ["channel-name"], listClass: "listjs" };
 var channelList = new List("publish-menu", options);
-$('#listjs-search').focusin(function(){
-    document.body.removeEventListener('mouseover');
-});
-$('#listjs-search').focusout(function(){
-    document.body.addEventListener('mouseover', onmouseMove, false);
-});
-
-
 })(jQuery);
