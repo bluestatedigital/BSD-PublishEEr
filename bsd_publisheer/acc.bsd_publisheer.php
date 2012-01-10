@@ -40,18 +40,7 @@ class Bsd_publisheer_acc {
         $this->EE =& get_instance();
         $this->sections[] = "<script>$('#accessoryTabs a.bsd_publisheer').parent().remove();</script>";
         $this->EE->cp->load_package_js('list.min');
-        $styles = '<style type="text/css"> 
-        #navigationTabs #channel-list ul.listjs { display: block; overflow: auto; margin: 8px 0 0 0; position: relative; background: transparent; -webkit-border-top-left-radius: 0 !important; -webkit-border-top-right-radius: 0 !important; -moz-border-top-left-radius: 0 !important; -border-top-right-radius: 0 !important; -webkit-box-shadow: 0; -moz-box-shadow: 0; box-shadow: 0; } 
-        #navigationTabs #listjs-search-label { display: block; margin: 0 auto; width: 80%; font-weight: bold; font-size: 90%; } 
-        #listjs-search { width: 98%; } #navigationTabs #listjs-search-li { background: transparent; color: inherit; }
-        #navigationTabs #publish-menu { padding-bottom: 0; -webkit-border-bottom-left-radius: 0 !important; -webkit-border-bottom-right-radius: 0 !important; -moz-border-bottom-left-radius: 0 !important; -border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
-        #navigationTabs #channel-list.hover { background: transparent !important; }
-        #channel-list .listjs { -webkit-border-top-left-radius: 0 !important; -webkit-border-top-right-radius: 0 !important; -moz-border-top-left-radius: 0 !important; -border-top-right-radius: 0 !important; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; }
-        .clearfix:before, .clearfix:after {  content: "."; display: block; height: 0; visibility: hidden; } 
-        .clearfix:after { clear: both; }
-        .clearfix { zoom: 1; }
-        </style>';
-        $this->EE->cp->add_to_head($styles);
+        $this->EE->cp->add_to_head('<style type="text/css">' . file_get_contents(PATH_THIRD . 'bsd_publisheer/css/publisheer.css') . '</style>');
         $this->EE->cp->load_package_js('fix-menu');
     }
     
