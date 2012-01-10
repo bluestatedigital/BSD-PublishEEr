@@ -24,7 +24,7 @@
  * @link        http://www.bluestatedigital.com
  */
  
-class Bsd_publisheer {
+class Bsd_publisheer_acc {
     
     public $name            = 'BSD PublishEEr';
     public $id              = 'bsd_publisheer';
