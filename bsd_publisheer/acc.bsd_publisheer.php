@@ -29,7 +29,7 @@ class Bsd_publisheer_acc {
     public $name            = 'BSD PublishEEr';
     public $id              = 'bsd_publisheer';
     public $version         = '1.0';
-    public $description     = 'Adds a searchable publish menu to the Control Panel';
+    public $description     = 'Adds the ability to filter channels in the publish menu.';
     public $sections        = array();
     
     /**

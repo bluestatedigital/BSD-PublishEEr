@@ -1,6 +1,6 @@
 #BSD PublishEEr
 
-This Control Panel accessory adds the ability to filter your Publish menu by searching.
+This Control Panel accessory adds the ability to filter channels in the publish menu..
 
 ###Installation Instructions
 
